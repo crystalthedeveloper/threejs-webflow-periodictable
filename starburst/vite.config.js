@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
+  base: '/threejs-webflow-periodictable/',
   build: {
     outDir: 'dist',
     rollupOptions: {
