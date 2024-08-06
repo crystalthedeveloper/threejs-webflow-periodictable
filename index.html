@@ -1,13 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Periodic Table of Skills</title>
-    <link rel="stylesheet" href="../style.css">
+    <title>Three.js Scene</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+            margin: 0;
+            background: #020d19;
+            /* Updated background color */
+        }
+
+        a {
+            color: #ffe600;
+        }
+
+        #menu {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .element {
+            width: 320px;
+            height: 360px;
+            box-shadow: 0px 0px 12px rgba(2, 13, 25, 0.5);
+            border: 1px solid rgba(255, 230, 0, 0.25);
+            font-family: Helvetica, sans-serif;
+            text-align: center;
+            line-height: normal;
+            cursor: default;
+        }
+
+        .element:hover {
+            box-shadow: 0px 0px 12px rgba(255, 230, 0, 0.75);
+            border: 1px solid rgba(255, 230, 0, 0.75);
+        }
+
+        .element .number {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 50px;
+            color: rgba(255, 230, 0, 0.75);
+        }
+
+        .element .symbol {
+            position: absolute;
+            top: 100px;
+            left: 0px;
+            right: 0px;
+            font-size: 80px;
+            /* Increased font size to match box size */
+            font-weight: bold;
+            color: rgba(255, 255, 255, 0.75);
+            text-shadow: 0 0 10px rgba(255, 230, 0, 0.95);
+        }
+
+        .element .details {
+            position: absolute;
+            bottom: 15px;
+            left: 0px;
+            right: 0px;
+            font-size: 30px;
+            /* Increased font size to match box size */
+            color: rgba(255, 255, 255, 0.75);
+        }
+
+        #container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </head>
+
 <body>
     <div id="container"></div>
     <script type="module" src="../src/main.js"></script>
 </body>
+
 </html>
