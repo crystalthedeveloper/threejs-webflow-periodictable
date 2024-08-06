@@ -1,3 +1,4 @@
+//public/main.js
 import * as THREE from 'three';
 import TWEEN from 'three/examples/jsm/libs/tween.module.js';
 import { TrackballControls } from 'three/examples/jsm/controls/TrackballControls.js';
