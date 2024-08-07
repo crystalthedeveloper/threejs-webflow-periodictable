@@ -1,4 +1,4 @@
-//public/main.js
+//threejs-webflow-periodictable/starburstpublic/src/main.js
 import * as THREE from 'three';
 import { TWEEN } from 'three/examples/jsm/libs/tween.module.min.js';
 import { TrackballControls } from 'three/examples/jsm/controls/TrackballControls.js';
